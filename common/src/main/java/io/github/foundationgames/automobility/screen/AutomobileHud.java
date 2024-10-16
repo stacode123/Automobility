@@ -46,7 +46,7 @@ public enum AutomobileHud {;
         if (auto.getTurboCharge() > AutomobileEntity.SMALL_TURBO_TIME) color = 0xFFEA4A;
         if (auto.getTurboCharge() > AutomobileEntity.MEDIUM_TURBO_TIME) color = 0x7DE9FF;
         if (auto.getTurboCharge() > AutomobileEntity.LARGE_TURBO_TIME) color = 0x906EFF;
-        GuiComponent.drawString(pose, Minecraft.getInstance().font, Component.literal(AUtils.DEC_TWO_PLACES.format(speed) +" km/h"), 20, 20, color);
+        GuiComponent.drawString(pose, Minecraft.getInstance().font, Component.literal(AUtils.DEC_TWO_PLACES.format(speed) +" km/hh"), 20, 20, color);
     }
 
     private static void renderControlHints(PoseStack pose, float alpha) {
